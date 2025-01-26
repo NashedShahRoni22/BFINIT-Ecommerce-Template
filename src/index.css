@@ -1,0 +1,12 @@
+/* Google Fonts - Merriweather Sans & Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-roboto: Roboto, serif;
+  --font-merriweather: Merriweather Sans, serif;
+  --color-primary: #000000;
+  --color-accent: #ff6900;
+  --color-text: #ffffff;
+}
