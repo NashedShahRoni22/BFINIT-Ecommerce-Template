@@ -1,0 +1,32 @@
+#slider3 .swiper {
+  position: static;
+}
+
+#slider3 .swiper-button-prev,
+.swiper-button-next {
+  top: 0;
+  margin-top: 5px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  width: 28px;
+  height: 28px;
+  color: #000;
+}
+
+#slider3 .swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#slider3 .swiper-button-prev {
+  top: 94%;
+  left: 40%;
+  transform: translate(0px, -40%);
+}
+
+#slider3 .swiper-button-next {
+  top: 94%;
+  right: 40%;
+  transform: translate(0px, -40%);
+}

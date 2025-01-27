@@ -1,12 +1,24 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { carouselData } from "../../data/carouselData";
 import { Link } from "react-router";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper/modules";
+import { carouselData } from "../../../data/carouselData";
+import "swiper/css";
+import "swiper/css/navigation";
+import "./slider1.css";
 
 export default function Slider1() {
   return (
     <section className="mx-5 py-5 md:container md:mx-auto">
-      <Swiper className="mySwiper w-full md:h-[496px]">
+      <Swiper
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
+        navigation={true}
+        modules={[Autoplay, Navigation]}
+        id="slider1"
+        className="relative w-full md:h-[496px]"
+      >
         {carouselData.map((data, i) => (
           <SwiperSlide key={i}>
             <Link to={data.url}>

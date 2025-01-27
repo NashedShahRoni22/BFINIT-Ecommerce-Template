@@ -28,13 +28,17 @@ export default function Navbar() {
           </div>
 
           {/* logo */}
-          <Link to="/">
-            <img
+          <Link
+            to="/"
+            className="font-merriweather text-accent text-2xl font-semibold italic"
+          >
+            {/* <img
               src={logo}
               alt="brand logo"
               loading="lazy"
               className="w-24 md:w-36"
-            />
+            /> */}
+            Brand Logo
           </Link>
 
           {/* Mobile Search Button */}

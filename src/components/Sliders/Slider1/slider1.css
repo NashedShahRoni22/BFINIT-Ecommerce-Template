@@ -1,0 +1,31 @@
+#slider1 .swiper {
+  position: static;
+}
+
+#slider1 .swiper-button-prev,
+.swiper-button-next {
+  top: 0;
+  margin-top: 5px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  width: 34px;
+  height: 34px;
+  color: #000;
+}
+
+#slider1 .swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#slider1 .swiper-button-prev {
+  top: 88.5%;
+  right: 100px;
+  left: auto;
+}
+
+#slider1 .swiper-button-next {
+  top: 91.5%;
+  right: 30px;
+}

@@ -1,0 +1,33 @@
+#slider2 .swiper {
+  position: static;
+}
+
+#slider2 .swiper-button-prev,
+.swiper-button-next {
+  top: 0;
+  margin-top: 5px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  width: 34px;
+  height: 34px;
+  color: #000;
+}
+
+#slider2 .swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#slider2 .swiper-button-prev {
+  top: 50%;
+  left: 10px;
+  transform: translate(0px, -50%);
+}
+
+#slider2 .swiper-button-prev,
+.swiper-button-next {
+  top: 50%;
+  right: 10px;
+  transform: translate(0px, -50%);
+}
