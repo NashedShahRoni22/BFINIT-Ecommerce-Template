@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full">
-      <div className="bg-[var(--color-primary)] py-4 text-white">
+      <div className="bg-[var(--color-primary)] py-4 text-[var(--color-text)]">
         <div className="mx-5 flex items-center justify-between gap-8 md:container md:mx-auto md:justify-normal">
           {/* Mobile Menu Toggler */}
           <div className="md:hidden">

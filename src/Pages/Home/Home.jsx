@@ -1,11 +1,9 @@
-import SectionContainer from "../../components/shared/SectionContainer";
+import Slider1 from "../../components/Sliders/Slider1";
 
 export default function Home() {
   return (
     <main>
-      <SectionContainer>
-        <div className="min-h-screen">Home</div>
-      </SectionContainer>
+      <Slider1 />
     </main>
   );
 }

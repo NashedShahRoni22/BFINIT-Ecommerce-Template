@@ -23,4 +23,8 @@ export const customerCare = [
     title: "Become a Reseller",
     path: "/",
   },
+  {
+    title: "Blog",
+    path: "/",
+  },
 ];

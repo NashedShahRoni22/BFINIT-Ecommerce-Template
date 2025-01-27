@@ -6,7 +6,7 @@
 @theme {
   --font-roboto: Roboto, serif;
   --font-merriweather: Merriweather Sans, serif;
-  --color-primary: #000000;
-  --color-accent: #ff6900;
-  --color-text: #ffffff;
+  --color-primary: #fff;
+  --color-accent: #fff;
+  --color-text: #fff;
 }

@@ -88,10 +88,6 @@ export default function CategoryProvider({ children }) {
       name: "Used Device",
       path: "/",
     },
-    {
-      name: "Blog",
-      path: "/",
-    },
   ];
 
   return (
