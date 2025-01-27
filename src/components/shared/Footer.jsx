@@ -27,42 +27,15 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-16">
-          {/* Payment Methods */}
+          {/* Social Links */}
           <div>
-            <p className="mb-3 font-medium">Payment Methods</p>
-            <div className="flex flex-wrap gap-4">
-              {paymentMethods.map((payment, i) => (
-                <img
-                  key={i}
-                  src={payment}
-                  alt="payment method"
-                  loading="lazy"
-                  className="w-12 object-contain"
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* Our Apps */}
-          <div>
-            <p className="mb-3 font-medium">Download Our Apps</p>
+            <p className="mb-3 font-medium">Follow Us</p>
             <div className="flex items-center gap-4">
-              <Link to="/">
-                <img
-                  src={appStore}
-                  alt="download appstore apps"
-                  loading="lazy"
-                  className="w-36"
-                />
-              </Link>
-              <Link to="/">
-                <img
-                  src={playStore}
-                  alt="download playstore apps"
-                  loading="lazy"
-                  className="w-36"
-                />
-              </Link>
+              {socialLinks.map((link, i) => (
+                <Link key={i} to={link.url}>
+                  <img src={link.icon} alt="social links" className="size-8" />
+                </Link>
+              ))}
             </div>
           </div>
 
@@ -89,15 +62,42 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Social Links */}
+          {/* Payment Methods */}
           <div>
-            <p className="mb-3 font-medium">Follow Us</p>
-            <div className="flex items-center gap-4">
-              {socialLinks.map((link, i) => (
-                <Link key={i} to={link.url}>
-                  <img src={link.icon} alt="social links" className="size-8" />
-                </Link>
+            <p className="mb-3 font-medium">Payment Methods</p>
+            <div className="flex flex-wrap gap-4">
+              {paymentMethods.map((payment, i) => (
+                <img
+                  key={i}
+                  src={payment}
+                  alt="payment method"
+                  loading="lazy"
+                  className="w-[120px] h-[80px] rounded-xl"
+                />
               ))}
+            </div>
+          </div>
+
+          {/* Our Apps */}
+          <div>
+            <p className="mb-3 font-medium">Download Our Apps</p>
+            <div className="flex items-center gap-4">
+              <Link to="/">
+                <img
+                  src={appStore}
+                  alt="download appstore apps"
+                  loading="lazy"
+                  className="w-36"
+                />
+              </Link>
+              <Link to="/">
+                <img
+                  src={playStore}
+                  alt="download playstore apps"
+                  loading="lazy"
+                  className="w-36"
+                />
+              </Link>
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ export default function ThemeProvider({ children }) {
   };
 
   const blueTheme = {
-    primary: "#6699CC",
+    primary: "#1e96fc",
     text: "#fff",
     accent: "#FF8C42",
   };
