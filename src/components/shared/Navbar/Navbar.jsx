@@ -7,18 +7,21 @@ import {
 } from "react-icons/hi2";
 import { BsCart3, BsHeart, BsPersonCircle } from "react-icons/bs";
 import MobileNav from "./MobileNav";
+import useCart from "../../../hooks/useCart";
 import logo from "../../../assets/logo/logo.webp";
 
 export default function Navbar() {
+  const { cartItems } = useCart();
   const [showMenu, setShowMenu] = useState(false);
 
+  // handle mobile hamburger menu
   const handleShowMenu = () => {
     setShowMenu(showMenu ? false : true);
   };
 
   return (
     <nav className="w-full">
-      <div className="bg-[var(--color-primary)] py-4 text-[var(--color-text)]">
+      <div className="bg-primary text-on-primary py-4">
         <div className="mx-5 flex items-center justify-between gap-8 md:container md:mx-auto md:justify-normal">
           {/* Mobile Menu Toggler */}
           <div className="md:hidden">
@@ -43,7 +46,7 @@ export default function Navbar() {
 
           {/* Mobile Search Button */}
           <button className="md:hidden">
-            <HiOutlineMagnifyingGlass className="text-2xl text-[var(--color-accent)]" />
+            <HiOutlineMagnifyingGlass className="text-accent text-2xl" />
           </button>
 
           {/* Large Device search field */}
@@ -55,7 +58,7 @@ export default function Navbar() {
               placeholder="Search"
               className="w-full rounded-full border-none bg-white px-4 py-2.5 text-black outline-none"
             />
-            <HiOutlineMagnifyingGlass className="absolute top-1/2 right-4 -translate-y-1/2 cursor-pointer text-2xl text-[var(--color-accent)]" />
+            <HiOutlineMagnifyingGlass className="text-accent absolute top-1/2 right-4 -translate-y-1/2 cursor-pointer text-2xl" />
           </div>
 
           {/* Large Device Offers */}
@@ -63,20 +66,20 @@ export default function Navbar() {
             {/* cart items */}
             <Link to="/cart" className="relative">
               <BsCart3 className="text-2xl" />
-              <div className="absolute -top-3 -right-3.5 grid size-5 place-items-center rounded-full bg-[var(--color-accent)] text-center text-sm text-white">
-                0
+              <div className="bg-accent absolute -top-3 -right-3.5 grid size-5 place-items-center rounded-full text-center text-sm text-white tabular-nums">
+                {cartItems?.length < 100 ? cartItems?.length : "99+"}
               </div>
             </Link>
             {/* favourite items */}
             <Link to="/wishlist" className="relative">
               <BsHeart className="text-2xl" />
-              <div className="absolute -top-3 -right-3.5 grid size-5 place-items-center rounded-full bg-[var(--color-accent)] text-center text-sm text-white">
+              <div className="bg-accent absolute -top-3 -right-3.5 grid size-5 place-items-center rounded-full text-center text-sm text-white">
                 0
               </div>
             </Link>
             {/* login */}
             <Link to="/login">
-              <BsPersonCircle className="text-2xl transition-all duration-200 ease-in-out hover:text-[var(--color-accent)]" />
+              <BsPersonCircle className="hover:text-accent text-2xl transition-all duration-200 ease-in-out" />
             </Link>
           </div>
         </div>

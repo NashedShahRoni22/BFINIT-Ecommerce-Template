@@ -8,7 +8,7 @@ import { socialLinks } from "../../data/footer/socialLinks";
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--color-primary)] py-10 text-[var(--color-text)] md:py-20">
+    <footer className="bg-primary text-on-primary py-10 md:py-20">
       <div className="mx-5 md:container md:mx-auto">
         {/* Customer Care */}
         <div>
@@ -18,7 +18,7 @@ export default function Footer() {
               <Link
                 key={i}
                 to={info.path}
-                className="w-fit transition-all duration-200 ease-in-out hover:text-[var(--color-accent)] hover:underline"
+                className="hover:text-accent w-fit transition-all duration-200 ease-in-out hover:underline"
               >
                 {info.title}
               </Link>
@@ -53,7 +53,7 @@ export default function Footer() {
                   />
                   <Link
                     to="/"
-                    className="text-sm transition-all duration-200 ease-in-out hover:text-[var(--color-accent)] hover:underline"
+                    className="hover:text-accent text-sm transition-all duration-200 ease-in-out hover:underline"
                   >
                     {market.country}
                   </Link>
@@ -72,7 +72,7 @@ export default function Footer() {
                   src={payment}
                   alt="payment method"
                   loading="lazy"
-                  className="w-[120px] h-[80px] rounded-xl"
+                  className="h-[80px] w-[120px] rounded-xl"
                 />
               ))}
             </div>

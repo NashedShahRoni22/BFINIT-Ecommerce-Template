@@ -11,7 +11,7 @@ export default function CategoryBar() {
           <div key={i} className="group relative py-3 text-sm">
             <Link
               to={category.path}
-              className="font-medium transition-all duration-200 ease-in-out group-hover:text-[var(--color-accent)]"
+              className="group-hover:text-accent font-medium transition-all duration-200 ease-in-out"
             >
               {category.name}
             </Link>
@@ -23,7 +23,7 @@ export default function CategoryBar() {
                   <Link
                     key={i}
                     to={item.path}
-                    className="rounded p-2 transition-all duration-200 ease-in-out hover:bg-[var(--color-accent)] hover:text-white"
+                    className="hover:bg-accent rounded p-2 transition-all duration-200 ease-in-out hover:text-white"
                   >
                     {item.name}
                   </Link>

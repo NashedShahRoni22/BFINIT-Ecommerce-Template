@@ -6,25 +6,25 @@ export default function ThemeProvider({ children }) {
   const blackTheme = {
     primary: "#000000",
     accent: "#ff6900",
-    text: "#fff",
+    textOnPrimary: "#fff",
   };
 
   const blueTheme = {
     primary: "#1e96fc",
-    text: "#fff",
     accent: "#FF8C42",
+    textOnPrimary: "#fff",
   };
 
   const greenTheme = {
     primary: "#2f855a",
-    text: "#fff",
     accent: "#84cc16",
+    textOnPrimary: "#fff",
   };
 
   const creamTheme = {
     primary: "#faf3e0",
-    text: "#000",
     accent: "#c084fc",
+    textOnPrimary: "#000",
   };
 
   const theme = blackTheme;
@@ -32,8 +32,8 @@ export default function ThemeProvider({ children }) {
   useEffect(() => {
     const root = document.documentElement;
     root.style.setProperty("--color-primary", theme.primary);
-    root.style.setProperty("--color-text", theme.text);
     root.style.setProperty("--color-accent", theme.accent);
+    root.style.setProperty("--color-on-primary", theme.textOnPrimary);
   }, [theme]);
 
   return (
