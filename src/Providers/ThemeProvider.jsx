@@ -3,7 +3,7 @@ import { createContext, useEffect } from "react";
 export const ThemeContext = createContext(null);
 
 export default function ThemeProvider({ children }) {
-  const orangeTheme = {
+  const blackTheme = {
     primary: "#000000",
     accent: "#ff6900",
     text: "#fff",
@@ -27,7 +27,7 @@ export default function ThemeProvider({ children }) {
     accent: "#c084fc",
   };
 
-  const theme = orangeTheme;
+  const theme = blackTheme;
 
   useEffect(() => {
     const root = document.documentElement;

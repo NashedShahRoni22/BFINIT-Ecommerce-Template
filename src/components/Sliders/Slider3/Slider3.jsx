@@ -26,7 +26,7 @@ export default function Slider3() {
         loop={true}
         navigation={true}
         pagination={true}
-        modules={[Autoplay, Navigation, Pagination]}
+        modules={[Navigation, Pagination]}
         id="slider3"
         className="relative col-span-12 w-full md:col-span-8"
       >

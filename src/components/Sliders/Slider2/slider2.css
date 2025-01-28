@@ -3,18 +3,18 @@
 }
 
 #slider2 .swiper-button-prev,
-.swiper-button-next {
+#slider2 .swiper-button-next {
   top: 0;
   margin-top: 5px;
-  border: 1px solid #000;
+  border: 1px solid var(--color-accent);
   border-radius: 100%;
   width: 34px;
   height: 34px;
-  color: #000;
+  color: var(--color-accent);
 }
 
 #slider2 .swiper-button-prev:after,
-.swiper-button-next:after {
+#slider2 .swiper-button-next:after {
   font-size: 18px;
   font-weight: 600;
 }
@@ -26,7 +26,7 @@
 }
 
 #slider2 .swiper-button-prev,
-.swiper-button-next {
+#slider2 .swiper-button-next {
   top: 50%;
   right: 10px;
   transform: translate(0px, -50%);
