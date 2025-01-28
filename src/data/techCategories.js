@@ -1,0 +1,18 @@
+export const techCategories = [
+  { name: "Phones" },
+  { name: "Tablet" },
+  { name: "Laptop" },
+  { name: "Smart Watch" },
+  { name: "AirPods" },
+  { name: "Sounds" },
+  { name: "Accessories" },
+  { name: "Gadgets" },
+  { name: "Earbuds" },
+  { name: "Phone Cases" },
+  { name: "Screen Protectors" },
+  { name: "Over-Ear Headphones" },
+  { name: "MacBook Case" },
+  { name: "Power Banks" },
+  { name: "Adapters" },
+  { name: "Smart TV" },
+];

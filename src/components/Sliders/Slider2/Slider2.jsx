@@ -16,10 +16,11 @@ export default function Slider2() {
           delay: 4000,
           disableOnInteraction: false,
         }}
+        loop={true}
         navigation={true}
         modules={[Autoplay, Navigation]}
         id="slider2"
-        className="relative col-span-12 w-full md:col-span-8"
+        className="relative col-span-12 h-auto w-full md:col-span-8"
       >
         {carouselData.map((data, i) => (
           <SwiperSlide key={i}>

@@ -6,11 +6,19 @@
 #slider2 .swiper-button-next {
   top: 0;
   margin-top: 5px;
-  border: 1px solid var(--color-accent);
+  border: 1px solid #ccc;
   border-radius: 100%;
   width: 34px;
   height: 34px;
-  color: var(--color-accent);
+  color: #000;
+  background: #ccc;
+  opacity: 0.7;
+  transition: all 0.2s ease-in-out;
+}
+
+#slider2 .swiper-button-prev:hover,
+#slider2 .swiper-button-next:hover {
+  opacity: 1;
 }
 
 #slider2 .swiper-button-prev:after,

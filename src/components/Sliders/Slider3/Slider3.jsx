@@ -25,10 +25,12 @@ export default function Slider3() {
         }}
         loop={true}
         navigation={true}
-        pagination={true}
-        modules={[Navigation, Pagination]}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Autoplay, Navigation, Pagination]}
         id="slider3"
-        className="relative col-span-12 w-full md:col-span-8"
+        className="relative col-span-12 h-auto w-full md:col-span-8"
       >
         {carouselData.map((data, i) => (
           <SwiperSlide key={i}>
