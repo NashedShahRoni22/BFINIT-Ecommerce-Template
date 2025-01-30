@@ -19,6 +19,14 @@ export default function CartProvider({ children }) {
     });
   };
 
+  // Deleate a cart item from local storage
+  const handleCartDelete = (product) => {
+    setCartItems((prevItems) => {
+      const updatedItems = prevItems.filter((item) => item.id !== product.id);
+      return updatedItems;
+    });
+  };
+
   useEffect(() => {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
@@ -27,6 +35,7 @@ export default function CartProvider({ children }) {
     cartItems,
     setCartItems,
     handleAddToCart,
+    handleCartDelete,
   };
 
   return (
