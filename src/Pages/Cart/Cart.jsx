@@ -76,13 +76,13 @@ export default function Cart() {
             <div className="flex items-center justify-center gap-16">
               <Link
                 to="/"
-                className="text-accent px-4 py-2 text-lg font-medium"
+                className="text-accent px-4 py-2 text-center text-lg font-medium"
               >
                 Continue Shopping
               </Link>
               <Link
                 to="/checkout"
-                className="bg-accent text-on-primary px-4 py-2 text-lg font-medium"
+                className="bg-accent text-on-primary px-4 py-2 text-center text-lg font-medium"
               >
                 Go to Checkout
               </Link>
